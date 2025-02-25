@@ -395,12 +395,13 @@ animations = [{
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_02wpe"]
-radius = 4.0
+radius = 3.0
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_xig2m"]
 radius = 3.0
 
 [node name="Player" type="CharacterBody2D"]
+y_sort_enabled = true
 collision_layer = 2
 script = ExtResource("1_0xvti")
 current_tool = 1
@@ -408,13 +409,11 @@ current_tool = 1
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -8)
 sprite_frames = SubResource("SpriteFrames_5ag5j")
-animation = &"chopping_right"
+animation = &"idle_front"
 autoplay = "idle_front"
-frame = 1
-frame_progress = 1.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, -4)
+position = Vector2(0, -3)
 shape = SubResource("CircleShape2D_02wpe")
 
 [node name="StateMachine" type="Node" parent="." node_paths=PackedStringArray("initial_node_state")]
