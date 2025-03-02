@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://bb8ifmui2j2og"]
+[gd_scene load_steps=4 format=3 uid="uid://bb8ifmui2j2og"]
 
 [ext_resource type="Theme" uid="uid://cfpeho6xbce0b" path="res://scenes/ui/game_ui_theme.tres" id="1_82csm"]
 [ext_resource type="PackedScene" uid="uid://fi3ctj21wsed" path="res://scenes/ui/tools_panel.tscn" id="2_u3iyb"]
+[ext_resource type="PackedScene" uid="uid://jly6noyeo28u" path="res://scenes/ui/inventory_panel.tscn" id="3_mqjpq"]
 
 [node name="GameScreen" type="CanvasLayer"]
 
@@ -17,3 +18,8 @@ theme = ExtResource("1_82csm")
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 8
+
+[node name="InventoryPanel" parent="MarginContainer" instance=ExtResource("3_mqjpq")]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
