@@ -8,3 +8,12 @@ enum Tools {
 	PlantCorn,
 	PlantTomato
 }
+
+enum GrowStates {
+	Seed,
+	Germination,
+	Vegetative,
+	Reproducrion,
+	Maturity,
+	Harvesting
+}

@@ -3,6 +3,8 @@
 [ext_resource type="Script" path="res://scenes/components/day_night_cycle_component.gd" id="1_70q4f"]
 
 [sub_resource type="Gradient" id="Gradient_uakdh"]
+offsets = PackedFloat32Array(0.00480769, 0.0865385, 0.163462, 0.302885, 1)
+colors = PackedColorArray(0, 0, 0, 0.803922, 0.137255, 0.054902, 0.0156863, 0.784314, 0.309804, 0.227451, 0.117647, 0.788235, 0.537255, 0.294118, 0.192157, 0.784314, 1, 1, 1, 1)
 
 [sub_resource type="GradientTexture1D" id="GradientTexture1D_dljcq"]
 gradient = SubResource("Gradient_uakdh")
